@@ -36,7 +36,10 @@ defmodule ArtCollectionWeb.Router do
 
     scope "/" do
       pipe_through :browser
-      live_dashboard "/dashboard", metrics: ArtCollectionWeb.Telemetry, ecto_repos: ArtCollection.Repo
+
+      live_dashboard "/dashboard",
+        metrics: ArtCollectionWeb.Telemetry,
+        ecto_repos: ArtCollection.Repo
     end
   end
 end

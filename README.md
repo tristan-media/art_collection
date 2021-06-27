@@ -2,6 +2,8 @@
 
 An Elixir/Phoenix application for an art collection website
 
+![Elixir CI](https://github.com/tristan-media/art_collection/actions/workflows/elixir.yml/badge.svg)
+
 # Setup
 To start your Phoenix server:
 
