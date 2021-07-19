@@ -1,0 +1,5 @@
+<h1>Edit Nationality</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.cms_nationality_path(@conn, :update, @nationality)) %>
+
+<span><%= link "Back", to: Routes.cms_nationality_path(@conn, :index) %></span>

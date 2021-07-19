@@ -19,6 +19,12 @@ defmodule ArtCollectionWeb.Router do
     get "/", PageController, :index
   end
 
+  scope "/cms", ArtCollectionWeb, as: :cms do
+    pipe_through :browser
+
+    resources "/nationalities", NationalityController
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", ArtCollectionWeb do
   #   pipe_through :api

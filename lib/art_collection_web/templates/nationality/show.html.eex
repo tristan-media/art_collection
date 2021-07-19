@@ -1,0 +1,13 @@
+<h1>Show Nationality</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @nationality.name %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.cms_nationality_path(@conn, :edit, @nationality) %></span>
+<span><%= link "Back", to: Routes.cms_nationality_path(@conn, :index) %></span>
